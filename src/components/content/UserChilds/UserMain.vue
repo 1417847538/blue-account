@@ -3,7 +3,14 @@ import { useRouter } from 'vue-router'
 const router = useRouter()
 
 const addressClick = () => {
-  location.href = 'https://github.com/1417847538/blue-account'
+  Notify({
+    type: 'warning',
+    message: '跳转ing，感谢老板点个 Star',
+    duration: 1000,
+  })
+  setTimeout(() => {
+    location.href = 'https://github.com/1417847538/blue-account'
+  }, 1000)
 }
 
 const editPassword = () => {

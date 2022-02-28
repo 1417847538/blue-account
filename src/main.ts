@@ -31,6 +31,7 @@ import {
   Image,
   ActionSheet,
   Lazyload,
+  Notify,
 } from 'vant'
 
 const app = createApp(App)
@@ -57,5 +58,6 @@ app.use(Progress)
 app.use(Image)
 app.use(ActionSheet)
 app.use(Lazyload)
+app.use(Notify)
 
 app.mount('#app')
