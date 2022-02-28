@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import { useRouter } from 'vue-router'
+import { Notify } from 'vant'
 const router = useRouter()
 
 const addressClick = () => {
