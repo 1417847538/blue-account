@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { computed } from 'vue'
+import { onBeforeMount } from 'vue'
 import dayjs from 'dayjs'
 import {
   listRefreshing,
@@ -11,6 +11,8 @@ import {
 } from '@/components/content/billChilds/hooks/store'
 
 import BillLIstItem from '@/components/content/billChilds/BillLIstItem.vue'
+
+listFinished.value = false
 </script>
 
 <template>

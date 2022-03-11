@@ -124,6 +124,7 @@ const onRefresh = async () => {
 
 //进入页面加载完成后加载
 const onLoad = async () => {
+  initParam()
   await getBillListRequest()
 }
 

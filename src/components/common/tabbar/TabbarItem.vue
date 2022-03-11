@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useRouter } from 'vue-router'
-import { reactive } from 'vue'
+
 let { item } = defineProps<{
   item: {
     title: string

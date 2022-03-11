@@ -1,3 +1,28 @@
+import dog1 from '../../assets/dogImg/dog1.jpeg'
+import dog2 from '../../assets/dogImg/dog2.jpeg'
+import dog3 from '../../assets/dogImg/dog3.jpeg'
+import dog4 from '../../assets/dogImg/dog4.jpeg'
+import dog5 from '../../assets/dogImg/dog5.jpeg'
+import dog6 from '../../assets/dogImg/dog6.jpeg'
+import dog7 from '../../assets/dogImg/dog7.jpeg'
+import dog8 from '../../assets/dogImg/dog8.jpeg'
+import dog9 from '../../assets/dogImg/dog9.jpeg'
+import dog10 from '../../assets/dogImg/dog10.jpeg'
+import dog11 from '../../assets/dogImg/dog11.jpeg'
+import dog12 from '../../assets/dogImg/dog12.jpeg'
+
+import cat1 from '../../assets/catImg/cat1.jpeg'
+import cat2 from '../../assets/catImg/cat2.jpeg'
+import cat3 from '../../assets/catImg/cat3.jpeg'
+import cat4 from '../../assets/catImg/cat4.jpeg'
+import cat5 from '../../assets/catImg/cat5.jpeg'
+import cat6 from '../../assets/catImg/cat6.jpeg'
+import cat7 from '../../assets/catImg/cat7.jpeg'
+import cat8 from '../../assets/catImg/cat8.jpeg'
+import cat9 from '../../assets/catImg/cat9.jpeg'
+import cat10 from '../../assets/catImg/cat10.jpeg'
+import cat11 from '../../assets/catImg/cat11.jpeg'
+import cat12 from '../../assets/catImg/cat12.jpeg'
 interface item {
   name: string
   url: string
@@ -12,101 +37,101 @@ export const avatarList = {
   dog: [
     {
       name: 'dog1',
-      url: 'https://cdn.jsdelivr.net/gh/Blackn-L/Picture/blog/20211208224002.jpeg',
+      url: dog1,
     },
     {
       name: 'dog2',
-      url: 'https://cdn.jsdelivr.net/gh/Blackn-L/Picture/blog/20211208224029.jpeg',
+      url: dog2,
     },
     {
       name: 'dog3',
-      url: 'https://cdn.jsdelivr.net/gh/Blackn-L/Picture/blog/20211208224039.jpeg',
+      url: dog3,
     },
     {
       name: 'dog4',
-      url: 'https://cdn.jsdelivr.net/gh/Blackn-L/Picture/blog/20211208224054.jpeg',
+      url: dog4,
     },
     {
       name: 'dog5',
-      url: 'https://cdn.jsdelivr.net/gh/Blackn-L/Picture/blog/20211208224102.jpeg',
+      url: dog5,
     },
     {
       name: 'dog6',
-      url: 'https://cdn.jsdelivr.net/gh/Blackn-L/Picture/blog/20211208224107.jpeg',
+      url: dog6,
     },
     {
       name: 'dog7',
-      url: 'https://cdn.jsdelivr.net/gh/Blackn-L/Picture/blog/20211208224113.jpeg',
+      url: dog7,
     },
     {
       name: 'dog8',
-      url: 'https://cdn.jsdelivr.net/gh/Blackn-L/Picture/blog/20211208224148.jpeg',
+      url: dog8,
     },
     {
       name: 'dog9',
-      url: 'https://cdn.jsdelivr.net/gh/Blackn-L/Picture/blog/20211208224153.jpeg',
+      url: dog9,
     },
     {
       name: 'dog10',
-      url: 'https://cdn.jsdelivr.net/gh/Blackn-L/Picture/blog/20211208224157.jpeg',
+      url: dog10,
     },
     {
       name: 'dog11',
-      url: 'https://cdn.jsdelivr.net/gh/Blackn-L/Picture/blog/20211208224344.png',
+      url: dog11,
     },
     {
       name: 'dog12',
-      url: 'https://cdn.jsdelivr.net/gh/Blackn-L/Picture/blog/20211209010823.jpeg',
+      url: dog12,
     },
   ],
   cat: [
     {
       name: 'cat1',
-      url: 'https://cdn.jsdelivr.net/gh/Blackn-L/Picture/blog/20211209231336.jpeg',
+      url: cat1,
     },
     {
       name: 'cat2',
-      url: 'https://cdn.jsdelivr.net/gh/Blackn-L/Picture/blog/20211209231434.jpeg',
+      url: cat2,
     },
     {
       name: 'cat3',
-      url: 'https://cdn.jsdelivr.net/gh/Blackn-L/Picture/blog/20211209231440.jpeg',
+      url: cat3,
     },
     {
       name: 'cat4',
-      url: 'https://cdn.jsdelivr.net/gh/Blackn-L/Picture/blog/20211209231444.jpeg',
+      url: cat4,
     },
     {
       name: 'cat5',
-      url: 'https://cdn.jsdelivr.net/gh/Blackn-L/Picture/blog/20211209231450.jpeg',
+      url: cat5,
     },
     {
       name: 'cat6',
-      url: 'https://cdn.jsdelivr.net/gh/Blackn-L/Picture/blog/20211209231455.jpeg',
+      url: cat6,
     },
     {
       name: 'cat7',
-      url: 'https://cdn.jsdelivr.net/gh/Blackn-L/Picture/blog/20211209231459.jpeg',
+      url: cat7,
     },
     {
       name: 'cat8',
-      url: 'https://cdn.jsdelivr.net/gh/Blackn-L/Picture/blog/20211209231504.jpeg',
+      url: cat8,
     },
     {
       name: 'cat9',
-      url: 'https://cdn.jsdelivr.net/gh/Blackn-L/Picture/blog/20211209231508.jpeg',
+      url: cat9,
     },
     {
       name: 'cat10',
-      url: 'https://cdn.jsdelivr.net/gh/Blackn-L/Picture/blog/20211209231514.jpeg',
+      url: cat10,
     },
     {
       name: 'cat11',
-      url: 'https://cdn.jsdelivr.net/gh/Blackn-L/Picture/blog/20211209231519.jpeg',
+      url: cat11,
     },
     {
       name: 'cat12',
-      url: 'https://cdn.jsdelivr.net/gh/Blackn-L/Picture/blog/20211209231553.jpeg',
+      url: cat12,
     },
   ],
 }

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, onBeforeMount } from 'vue'
+import { ref, onUpdated } from 'vue'
 import { useRouter } from 'vue-router'
 import Login from '@/components/content/loginChilds/Login.vue'
 import Register from '@/components/content/loginChilds/Register.vue'
@@ -11,12 +11,12 @@ interface User {
 
 const router = useRouter()
 // 登陆后记住密码，直接就登陆到内部了
-onBeforeMount(() => {
-  if (localStorage.getItem('token')) router.push('/bill')
-})
+
+if (localStorage.getItem('token')) router.push('/bill')
 
 const login = ref<User | undefined>()
 const activeTab = ref<string>('login')
+
 // 注册成功后,跳回登陆页面账号并自动填写到登陆的账号和密码
 const toLogin = (user: User) => {
   activeTab.value = 'login'
@@ -52,7 +52,7 @@ const toLogin = (user: User) => {
 .login {
   display: flex;
   height: 100vh;
-  background: url('@/assets/img/bg2.jpg');
+  background: url('@/assets/img/bg2.jpeg');
   background-size: cover;
   background-position: center;
   flex-direction: column;

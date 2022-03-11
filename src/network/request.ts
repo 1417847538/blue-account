@@ -10,7 +10,7 @@ interface ResponseData<T = any> {
 const MODE = import.meta.env.MODE
 
 const instance = axios.create({
-  baseURL: '/api',
+  baseURL: 'http://xiaolan1.icu:8889',
 })
 
 export const request = async <T = any>(
@@ -23,7 +23,9 @@ export const request = async <T = any>(
     return config
   })
 
+  // 对请求数据的提前解构
   const { data } = await instance.request<ResponseData<T>>(config)
+
   if (typeof data !== 'object') {
     Toast.fail('服务器异常！')
     return Promise.reject(data)

@@ -1,11 +1,7 @@
 <script lang="ts" setup>
-import { ref, reactive } from 'vue'
-
 import BillHeader from '@/components/content/billChilds/BillHeader.vue'
 import BillList from '@/components/content/billChilds/BillList.vue'
 import BillAdd from '@/components/content/billChilds/BillAdd.vue'
-
-
 </script>
 
 <template>
@@ -13,7 +9,6 @@ import BillAdd from '@/components/content/billChilds/BillAdd.vue'
     <BillHeader />
     <BillList />
     <BillAdd />
-
   </div>
 </template>
 
