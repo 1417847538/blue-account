@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-import UserHeader from '@/components/content/UserChilds/UserHeader.vue'
-import UserMain from '@/components/content/UserChilds/UserMain.vue'
-import UserFooter from '@/components/content/UserChilds/UserFooter.vue'
+import UserHeader from './UserChilds/UserHeader.vue'
+import UserMain from './UserChilds/UserMain.vue'
+import UserFooter from './UserChilds/UserFooter.vue'
 </script>
 
 <template>

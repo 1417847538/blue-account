@@ -1,28 +1,28 @@
-import dog1 from '../../assets/dogImg/dog1.jpeg'
-import dog2 from '../../assets/dogImg/dog2.jpeg'
-import dog3 from '../../assets/dogImg/dog3.jpeg'
-import dog4 from '../../assets/dogImg/dog4.jpeg'
-import dog5 from '../../assets/dogImg/dog5.jpeg'
-import dog6 from '../../assets/dogImg/dog6.jpeg'
-import dog7 from '../../assets/dogImg/dog7.jpeg'
-import dog8 from '../../assets/dogImg/dog8.jpeg'
-import dog9 from '../../assets/dogImg/dog9.jpeg'
-import dog10 from '../../assets/dogImg/dog10.jpeg'
-import dog11 from '../../assets/dogImg/dog11.jpeg'
-import dog12 from '../../assets/dogImg/dog12.jpeg'
+import dog1 from '@/assets/dogImg/dog1.jpeg'
+import dog2 from '@/assets/dogImg/dog2.jpeg'
+import dog3 from '@/assets/dogImg/dog3.jpeg'
+import dog4 from '@/assets/dogImg/dog4.jpeg'
+import dog5 from '@/assets/dogImg/dog5.jpeg'
+import dog6 from '@/assets/dogImg/dog6.jpeg'
+import dog7 from '@/assets/dogImg/dog7.jpeg'
+import dog8 from '@/assets/dogImg/dog8.jpeg'
+import dog9 from '@/assets/dogImg/dog9.jpeg'
+import dog10 from '@/assets/dogImg/dog10.jpeg'
+import dog11 from '@/assets/dogImg/dog11.jpeg'
+import dog12 from '@/assets/dogImg/dog12.jpeg'
 
-import cat1 from '../../assets/catImg/cat1.jpeg'
-import cat2 from '../../assets/catImg/cat2.jpeg'
-import cat3 from '../../assets/catImg/cat3.jpeg'
-import cat4 from '../../assets/catImg/cat4.jpeg'
-import cat5 from '../../assets/catImg/cat5.jpeg'
-import cat6 from '../../assets/catImg/cat6.jpeg'
-import cat7 from '../../assets/catImg/cat7.jpeg'
-import cat8 from '../../assets/catImg/cat8.jpeg'
-import cat9 from '../../assets/catImg/cat9.jpeg'
-import cat10 from '../../assets/catImg/cat10.jpeg'
-import cat11 from '../../assets/catImg/cat11.jpeg'
-import cat12 from '../../assets/catImg/cat12.jpeg'
+import cat1 from '@/assets/catImg/cat1.jpeg'
+import cat2 from '@/assets/catImg/cat2.jpeg'
+import cat3 from '@/assets/catImg/cat3.jpeg'
+import cat4 from '@/assets/catImg/cat4.jpeg'
+import cat5 from '@/assets/catImg/cat5.jpeg'
+import cat6 from '@/assets/catImg/cat6.jpeg'
+import cat7 from '@/assets/catImg/cat7.jpeg'
+import cat8 from '@/assets/catImg/cat8.jpeg'
+import cat9 from '@/assets/catImg/cat9.jpeg'
+import cat10 from '@/assets/catImg/cat10.jpeg'
+import cat11 from '@/assets/catImg/cat11.jpeg'
+import cat12 from '@/assets/catImg/cat12.jpeg'
 interface item {
   name: string
   url: string
@@ -33,7 +33,7 @@ interface avatarList {
   cat: item[]
 }
 
-export const avatarList = {
+export const avatarList: avatarList = {
   dog: [
     {
       name: 'dog1',

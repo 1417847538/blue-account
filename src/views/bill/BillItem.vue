@@ -1,26 +1,22 @@
 <script lang="ts" setup>
-import { ref, reactive, onMounted } from 'vue'
+import { ref, reactive } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import dayjs from 'dayjs'
 import { Dialog, Toast } from 'vant'
 
-import { showAdd, showAddEdit } from '@/components/common/addPopup/hooks/store'
+import { type, showAdd } from './billChilds/hooks/store'
+import { changeBillItem } from './billChilds/hooks/hooks'
+import type { BillItem } from './billChilds/hooks/types'
 
-import {
-  type,
-  changeBillItem,
-} from '@/components/content/billChilds/hooks/store'
+import { deleteBillItem, getBillItem } from '@/api/bill'
 
-import { deleteBillItem, getBillItem } from '@/network/bill'
-import type { BillItem } from '@/components/content/billChilds/hooks/types'
-
-import Navbar from '@/components/common/navbar/Navbar.vue'
-import AddPopup from '@/components/common/addPopup/AddPopup.vue'
+import Navbar from '@/components/navbar/Navbar.vue'
+import AddPopup from '@/components/addPopup/AddPopup.vue'
 
 const route = useRoute()
 const router = useRouter()
 
-const billItem = reactive<BillItem>({})
+let billItem = reactive<BillItem>({})
 const id = Number(route.query.id)
 
 // 详情页请求
@@ -31,9 +27,8 @@ const getBillItemRequest = async (id: number) => {
   }
 }
 
-onMounted(() => {
-  getBillItemRequest(id)
-})
+getBillItemRequest(id)
+
 
 const onDelete = async () => {
   const { code, message } = await deleteBillItem(id)
@@ -94,7 +89,7 @@ const showDeleteDialog = () => {
         text="编辑"
         icon="records"
         plain
-        @click="showAddEdit = true"
+        @click="showAdd.showAdd = true"
       />
     </div>
   </main>
@@ -103,8 +98,8 @@ const showDeleteDialog = () => {
   <!-- <van-dialog /> -->
   <!-- 编辑模态框 -->
   <AddPopup
-    :showAddRead="showAddEdit"
-    @close="showAddEdit = false"
+    :showAddRead="showAdd"
+    @close="showAdd.showAdd = false"
     :defaultData="billItem"
   />
 </template>

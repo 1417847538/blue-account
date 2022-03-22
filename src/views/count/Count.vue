@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import CountHeader from '@/components/content/countChilds/CountHeader.vue'
-import CountMain from '@/components/content/countChilds/CountMain.vue'
+import CountHeader from './countChilds/CountHeader.vue'
+import CountMain from './countChilds/CountMain.vue'
 </script>
 
 <template>

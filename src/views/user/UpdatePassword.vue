@@ -2,10 +2,9 @@
 import { ref, reactive } from 'vue'
 import { useRouter } from 'vue-router'
 import { Toast } from 'vant'
-
-import { checkPassword } from '@/components/content/loginChilds/hooks/validator'
-import { updatePassword } from '@/network/user'
-import Navbar from '@/components/common/navbar/Navbar.vue'
+import { checkPassword } from '@/views/login/loginChilds/hooks/validator'
+import { updatePassword } from '@/api/user'
+import Navbar from '@/components/navbar/Navbar.vue'
 
 enum LeftIconType {
   CIRCLE = 'circle',
@@ -19,6 +18,7 @@ const router = useRouter()
 const oldPassword = ref('')
 const newPassword = ref('')
 const repeatPassword = ref('')
+
 const buttonLoading = ref(false)
 
 const showLeftIcon = reactive<{

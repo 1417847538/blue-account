@@ -1,11 +1,13 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
-
-import { editUserInfo } from '@/network/user'
+import { Toast } from 'vant'
+import { editUserInfo } from '@/api/user'
 import { avatarList } from './avatarList'
-const router = useRouter()
 
+import Navbar from '@/components/navbar/Navbar.vue'
+
+const router = useRouter()
 const showDialog = ref(false)
 const selectedAvatar = ref('')
 
@@ -30,8 +32,7 @@ const editAvatarRequest = async () => {
   }
 }
 
-import Navbar from '@/components/common/navbar/Navbar.vue'
-import { Toast } from 'vant'
+
 </script>
 
 <template>

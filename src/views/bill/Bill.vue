@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-import BillHeader from '@/components/content/billChilds/BillHeader.vue'
-import BillList from '@/components/content/billChilds/BillList.vue'
-import BillAdd from '@/components/content/billChilds/BillAdd.vue'
+import BillHeader from './billChilds/BillHeader.vue'
+import BillList from './billChilds/BillList.vue'
+import BillAdd from './billChilds/BillAdd.vue'
 </script>
 
 <template>

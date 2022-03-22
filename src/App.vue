@@ -4,7 +4,7 @@
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { preLoad } from '@/utils/preload'
-import Tabbar from '@/components/common/tabbar/Tabbar.vue'
+import Tabbar from '@/components/tabbar/Tabbar.vue'
 
 const route = useRoute()
 // 图片预加载

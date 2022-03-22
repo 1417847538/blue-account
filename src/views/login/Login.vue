@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { ref, onUpdated } from 'vue'
 import { useRouter } from 'vue-router'
-import Login from '@/components/content/loginChilds/Login.vue'
-import Register from '@/components/content/loginChilds/Register.vue'
+import Login from './loginChilds/Login.vue'
+import Register from './loginChilds/Register.vue'
 
 interface User {
   username: string
